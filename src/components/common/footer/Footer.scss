@@ -1,0 +1,22 @@
+.Footer {
+	width: 100%;
+	padding: 25px 80px;
+	box-sizing: border-box;
+	border-top: 1px solid #ccc;
+	.inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-width: 1360px;
+		margin: 0 auto;
+		ul {
+			display: flex;
+			li {
+				padding: 10px;
+				margin-left: 15px;
+				border: 1px solid #ccc;
+				border-radius: 100%;
+			}
+		}
+	}
+}

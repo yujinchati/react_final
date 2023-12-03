@@ -1,0 +1,34 @@
+{
+  "members": [
+    {
+      "name": "Vin",
+      "position": "President",
+      "pic": "member1.jpg"
+    },
+    {
+      "name": "Julia",
+      "position": "Vice President",
+      "pic": "member2.jpg"
+    },
+    {
+      "name": "Emily",
+      "position": "Ashtanga,Meditation",
+      "pic": "member3.jpg"
+    },
+    {
+      "name": "Hana",
+      "position": "Hata,Meditation",
+      "pic": "member4.jpg"
+    },
+    {
+      "name": "Emma",
+      "position": "Singing ball meditation",
+      "pic": "member5.jpg"
+    },
+    {
+      "name": "Judy",
+      "position": "Project Manager",
+      "pic": "member6.jpg"
+    }
+  ]
+}
