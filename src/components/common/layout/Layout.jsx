@@ -8,7 +8,6 @@ export default function Layout({ title, children }) {
 	useEffect(() => {}, []);
 	return (
 		<main ref={refFrame} className={`Layout ${title}`}>
-			<h2 ref={refTitle}>{title}</h2>
 			{children}
 		</main>
 	);

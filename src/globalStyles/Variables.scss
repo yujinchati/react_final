@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@300;400&display=swap');
 
 :root {
-	--baseFont: 'Nanum Myeongjo', serif;
-	--baseFont2: 'Noto Sans KR', sans-serif;
+	--baseFont: 'Noto Sans KR', sans-serif;
+	--baseFont2: 'Nanum Myeongjo', serif;
+
 	--pointFont: 'Libre Baskerville', serif;
-	--baseColor: #202020;
+	--baseColor: #444;
 	--baseColor-code: 18, 18, 18;
 	--pointColor: hotpink;
-	--bgColor: #efefef;
+	--bgColor: #f9f9f9;
 	--titSize: 2.4rem;
 	--titSize2: 1.4rem;
 }

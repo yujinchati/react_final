@@ -23,6 +23,7 @@ export default function Department() {
 
 	return (
 		<Layout title={'Department'}>
+			<h2>DEPARMENT</h2>
 			<section>
 				<ul>
 					{MemberInfo &&
