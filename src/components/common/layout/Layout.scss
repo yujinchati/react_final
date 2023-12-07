@@ -15,8 +15,14 @@
 			left: 0;
 			bottom: 0;
 			height: 1px;
-			width: 100%;
+			width: 0%;
 			background: #dad9d7;
+			transition: width 1s;
+		}
+		&.on {
+			&:after {
+				width: 100%;
+			}
 		}
 	}
 }

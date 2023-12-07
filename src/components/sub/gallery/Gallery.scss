@@ -2,6 +2,7 @@
 	.control {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		.tab {
 			display: flex;
 			li {
@@ -11,17 +12,44 @@
 		form {
 			border: 1px solid #ccc;
 			input {
-				padding: 5px;
+				padding: 5px 10px;
 				background: transparent;
 			}
 			button {
-				width: 24px;
-				height: 24px;
-				background: #fff;
-				font-size: 0;
-				line-height: 0;
-				text-indent: -999px;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 32px;
+				height: 34px;
+				background: #ccc;
 				vertical-align: top;
+				cursor: pointer;
+			}
+		}
+	}
+	article {
+		display: flex;
+		flex-wrap: wrap;
+		.pic {
+			width: 25%;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.profile {
+			background: #fff;
+
+			strong {
+				display: block;
+			}
+
+			p {
+				overflow: hidden;
+				max-height: 100px;
+			}
+			span {
+				display: block;
 				cursor: pointer;
 			}
 		}
