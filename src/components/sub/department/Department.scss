@@ -2,16 +2,16 @@
 	ul {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: center;
 		li {
 			overflow: hidden;
 			display: grid;
 			position: relative;
-			width: 32%;
-			height: 350px;
-			margin: 10px 0;
+			width: 20%;
+			height: 500px;
+			margin: 10px 20px;
 			align-items: stretch;
-			grid-template-rows: 250px 100px 0;
+			grid-template-rows: 400px 100px 0;
 			transition: 300ms;
 			img {
 				width: 100%;
@@ -31,15 +31,15 @@
 				background: #f4f8f7;
 				strong {
 					font-weight: bold;
-					font-size: 1.7rem;
+					font-size: 1.5rem;
 				}
 				span {
 					display: block;
-					padding-top: 15px;
+					padding-top: 5px;
 				}
 			}
 			&:hover {
-				grid-template-rows: 200px 100px 50px;
+				grid-template-rows: 350px 100px 50px;
 				.sns {
 					display: flex;
 				}

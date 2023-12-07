@@ -40,7 +40,13 @@ export default function Header() {
 				</li>
 			</ul>
 			<button type='button'>Mobile Menu</button>
-			<button type='button'>Mode change</button>
+
+			<div class='checkSwitch'>
+				<input type='checkbox' id='checkPush' name='inpPush' class='inpSwitch' />
+				<label for='checkPush' class='labSwitch'>
+					Dark mode change
+				</label>
+			</div>
 		</header>
 	);
 }

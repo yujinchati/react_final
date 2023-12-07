@@ -1,0 +1,29 @@
+.Gallery {
+	.control {
+		display: flex;
+		justify-content: space-between;
+		.tab {
+			display: flex;
+			li {
+				margin-right: 30px;
+			}
+		}
+		form {
+			border: 1px solid #ccc;
+			input {
+				padding: 5px;
+				background: transparent;
+			}
+			button {
+				width: 24px;
+				height: 24px;
+				background: #fff;
+				font-size: 0;
+				line-height: 0;
+				text-indent: -999px;
+				vertical-align: top;
+				cursor: pointer;
+			}
+		}
+	}
+}

@@ -5,6 +5,7 @@ import Footer from './components/common/footer/Footer';
 import './globalStyles/Variables.scss';
 import './globalStyles/Reset.scss';
 import Youtube from './components/sub/youtube/Youtube';
+import Gallery from './components/sub/gallery/Gallery';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Header />
 			<Route path='/department' component={Department} />
 			<Route path='/youtube' component={Youtube} />
+			<Route path='/gallery' component={Gallery} />
 			<Footer />
 		</div>
 	);

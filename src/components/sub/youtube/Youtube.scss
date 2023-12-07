@@ -1,0 +1,35 @@
+.listYoutube {
+	li {
+		display: flex;
+		padding: 30px 0;
+		border-top: 1px solid #ccc;
+		.pic {
+			height: 250px;
+			padding: 0 40px;
+			img {
+				width: auto;
+				height: 250px;
+			}
+		}
+		.info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			strong {
+				font-size: 2rem;
+			}
+			p {
+				padding-top: 20px;
+				height: 70px;
+				overflow: hidden;
+			}
+			a {
+				width: 100%;
+				padding-top: 20px;
+				margin-top: 15px;
+				display: block;
+				border-top: 1px solid #ccc;
+			}
+		}
+	}
+}

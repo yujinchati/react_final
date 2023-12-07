@@ -1,34 +1,54 @@
 {
   "members": [
     {
-      "name": "Vin",
-      "position": "President",
+      "name": "MA Yansong",
+      "position": "Founder & Principal Partner",
       "pic": "member1.jpg"
     },
     {
-      "name": "Julia",
-      "position": "Vice President",
+      "name": "DANG Qun",
+      "position": "Principal Partner",
       "pic": "member2.jpg"
     },
     {
-      "name": "Emily",
-      "position": "Ashtanga,Meditation",
+      "name": "Yosuke HAYANO",
+      "position": "Principal Partner",
       "pic": "member3.jpg"
     },
     {
-      "name": "Hana",
-      "position": "Hata,Meditation",
+      "name": "LIU Huiying",
+      "position": "Associate Partner",
       "pic": "member4.jpg"
     },
     {
-      "name": "Emma",
-      "position": "Singing ball meditation",
+      "name": "Andrea D'Antrassi",
+      "position": "Associate Partner",
       "pic": "member5.jpg"
     },
     {
-      "name": "Judy",
-      "position": "Project Manager",
+      "name": "Kin Li",
+      "position": "Associate Partner",
       "pic": "member6.jpg"
+    },
+    {
+      "name": "FU Changrui",
+      "position": "Associate Partner",
+      "pic": "member7.jpg"
+    },
+    {
+      "name": "Tiffany Dahlen",
+      "position": "Associate Partner",
+      "pic": "member8.jpg"
+    },
+    {
+      "name": "Flora Lee",
+      "position": "Associate Partner",
+      "pic": "member9.jpg"
+    },
+    {
+      "name": "LU Junliang",
+      "position": "Associate Partner",
+      "pic": "member10.jpg"
     }
   ]
 }
