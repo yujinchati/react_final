@@ -3,6 +3,7 @@ import Layout from '../../common/layout/Layout';
 import './Gallery.scss';
 import { IoIosSearch } from 'react-icons/io';
 import { useCustomText } from '../../../hook/useText';
+import Masonry from 'react-masonry-component';
 
 export default function Gallery() {
 	const upperTxt = useCustomText('upper');
@@ -51,7 +52,6 @@ export default function Gallery() {
 		const data = await fetch(url);
 		const json = await data.json();
 		setPics(json.photos.photo);
-		console.log(Pics);
 	};
 	useEffect(() => {
 		fetchFlickr({ type: 'interest', id: myID.current });
@@ -80,7 +80,7 @@ export default function Gallery() {
 							</fieldset>
 						</form>
 					</div>
-					<article>
+					<Masonry className={'frame'} options={{ transitionDuration: '0.5s' }} columns={4} spacing={2}>
 						{Pics.map((pic, idx) => {
 							return (
 								<div key={pic.id} className='pic'>
@@ -96,7 +96,7 @@ export default function Gallery() {
 								</div>
 							);
 						})}
-					</article>
+					</Masonry>
 				</section>
 			</Layout>
 		</>

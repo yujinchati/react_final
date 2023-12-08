@@ -3,6 +3,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 0 5px;
 		.tab {
 			display: flex;
 			li {
@@ -30,43 +31,47 @@
 			}
 		}
 	}
-	article {
+	.frame {
+		width: 100%;
+		margin-top: 50px;
 		display: flex;
 		flex-wrap: wrap;
-		padding-top: 50px;
-		.pic {
-			width: 25%;
-			img {
-				width: 100%;
-				height: auto;
-			}
+		justify-content: flex-start;
+	}
+	.pic {
+		width: 25%;
+		padding: 10px 5px 10px 5px;
+		box-sizing: border-box;
+		img {
+			width: 100%;
+			height: auto;
 		}
-		.profile {
-			padding: 15px 15px 30px;
-			background: #fff;
-			.date {
-				color: #aeaeae;
-				font-size: 0.7rem;
-			}
-			.title {
-				display: block;
-			}
-			.desc {
-				overflow: hidden;
-				padding-top: 20px;
-				color: #a5a5a5;
-				font-size: 0.9rem;
-				overflow: hidden;
-				display: -webkit-box;
-				-webkit-line-clamp: 6;
-				-webkit-box-orient: vertical;
-			}
-			.name {
-				display: block;
-				margin-top: 50px;
-				font-size: 0.8rem;
-				cursor: pointer;
-			}
+	}
+	.profile {
+		padding: 15px 15px 30px;
+		background: #fff;
+		.date {
+			color: #aeaeae;
+			font-size: 0.7rem;
+		}
+		.title {
+			display: block;
+		}
+		.desc {
+			overflow: hidden;
+			padding-top: 20px;
+			color: #a5a5a5;
+			font-size: 0.9rem;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 6;
+			-webkit-box-orient: vertical;
+		}
+		.name {
+			display: block;
+			margin-top: 50px;
+			font-size: 0.8rem;
+			cursor: pointer;
 		}
 	}
 }
