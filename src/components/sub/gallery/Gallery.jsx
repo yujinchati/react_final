@@ -2,8 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import Layout from '../../common/layout/Layout';
 import './Gallery.scss';
 import { IoIosSearch } from 'react-icons/io';
+import { useCustomText } from '../../../hook/useText';
 
 export default function Gallery() {
+	const upperTxt = useCustomText('upper');
 	const myID = useRef('199632221@N03');
 	const isUser = useRef(true);
 	const [Pics, setPics] = useState([]);
@@ -23,11 +25,16 @@ export default function Gallery() {
 		isUser.current = myID.current;
 		fetchFlickr({ type: 'user', id: myID.current });
 	};
+	const dateChange = (date) => {
+		let dateTxt = new Date(date);
+		dateTxt = upperTxt(dateTxt.toDateString());
+		return dateTxt;
+	};
 
 	const fetchFlickr = async (opt) => {
 		const num = 20;
 		const flickr_api = 'ce038f944e7f6b92329629071369b808';
-		const baseURL = `https://www.flickr.com/services/rest/?&api_key=${flickr_api}&per_page=${num}&format=json&nojsoncallback=1&extras=description,date_upload&method=`;
+		const baseURL = `https://www.flickr.com/services/rest/?&api_key=${flickr_api}&per_page=${num}&format=json&nojsoncallback=1&extras=description,date_taken&method=`;
 
 		const method_interest = 'flickr.interestingness.getList';
 		const method_user = 'flickr.people.getPhotos';
@@ -79,10 +86,12 @@ export default function Gallery() {
 								<div key={pic.id} className='pic'>
 									<img src={`https://live.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}_m.jpg`} alt={pic.title} />
 									<div className='profile'>
-										<span>POST ON :{pic.dateupload}</span>
-										<strong>{pic.title}</strong>
-										{pic.description ? <p>{pic.description._content}</p> : ''}
-										<span onClick={handleUser}>{pic.owner}</span>
+										<span className='date'>POST ON :{dateChange(pic.datetaken)}</span>
+										<strong className='title'>{pic.title}</strong>
+										{pic.description ? <p className='desc'>{pic.description._content}</p> : ''}
+										<span className='name' onClick={handleUser}>
+											{pic.owner}
+										</span>
 									</div>
 								</div>
 							);

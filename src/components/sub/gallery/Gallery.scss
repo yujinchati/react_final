@@ -7,6 +7,9 @@
 			display: flex;
 			li {
 				margin-right: 30px;
+				a {
+					cursor: pointer;
+				}
 			}
 		}
 		form {
@@ -30,6 +33,7 @@
 	article {
 		display: flex;
 		flex-wrap: wrap;
+		padding-top: 50px;
 		.pic {
 			width: 25%;
 			img {
@@ -38,18 +42,29 @@
 			}
 		}
 		.profile {
+			padding: 15px 15px 30px;
 			background: #fff;
-
-			strong {
+			.date {
+				color: #aeaeae;
+				font-size: 0.7rem;
+			}
+			.title {
 				display: block;
 			}
-
-			p {
+			.desc {
 				overflow: hidden;
-				max-height: 100px;
+				padding-top: 20px;
+				color: #a5a5a5;
+				font-size: 0.9rem;
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 6;
+				-webkit-box-orient: vertical;
 			}
-			span {
+			.name {
 				display: block;
+				margin-top: 50px;
+				font-size: 0.8rem;
 				cursor: pointer;
 			}
 		}
