@@ -1,0 +1,54 @@
+.Member {
+	.boxInput {
+		display: flex;
+		padding: 10px 0;
+		margin: 10px 0;
+		align-items: center;
+		.tit {
+			font-weight: bold;
+			width: 20%;
+		}
+		input {
+			width: 80%;
+			padding: 5px;
+			background: transparent;
+			border-bottom: 1px solid rgb(223, 223, 223);
+		}
+		textarea {
+			width: 80%;
+			border: 1px solid rgb(223, 223, 223);
+			resize: none;
+		}
+		.groupInput {
+			display: flex;
+			width: 80%;
+			input {
+				width: auto;
+			}
+			label {
+				border: 1px solid rgb(223, 223, 223);
+				border-radius: 20px;
+			}
+			.custom {
+				margin-right: 30px;
+				label {
+					display: flex;
+					-webkit-box-pack: center;
+					justify-content: center;
+					-webkit-box-align: center;
+					align-items: center;
+					width: 90px;
+					height: 100%;
+					cursor: pointer;
+				}
+				input {
+					display: none;
+					&:checked + label {
+						background: #000;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

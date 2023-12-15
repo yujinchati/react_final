@@ -29,8 +29,8 @@ export default function Header() {
 					</NavLink>
 				</li>
 				<li>
-					<NavLink to='/members' activeClassName={'on'}>
-						Members
+					<NavLink to='/member' activeClassName={'on'}>
+						Member
 					</NavLink>
 				</li>
 				<li>

@@ -1,54 +1,108 @@
 {
-  "members": [
-    {
-      "name": "MA Yansong",
-      "position": "Founder & Principal Partner",
-      "pic": "member1.jpg"
-    },
-    {
-      "name": "DANG Qun",
-      "position": "Principal Partner",
-      "pic": "member2.jpg"
-    },
-    {
-      "name": "Yosuke HAYANO",
-      "position": "Principal Partner",
-      "pic": "member3.jpg"
-    },
-    {
-      "name": "LIU Huiying",
-      "position": "Associate Partner",
-      "pic": "member4.jpg"
-    },
-    {
-      "name": "Andrea D'Antrassi",
-      "position": "Associate Partner",
-      "pic": "member5.jpg"
-    },
-    {
-      "name": "Kin Li",
-      "position": "Associate Partner",
-      "pic": "member6.jpg"
-    },
-    {
-      "name": "FU Changrui",
-      "position": "Associate Partner",
-      "pic": "member7.jpg"
-    },
-    {
-      "name": "Tiffany Dahlen",
-      "position": "Associate Partner",
-      "pic": "member8.jpg"
-    },
-    {
-      "name": "Flora Lee",
-      "position": "Associate Partner",
-      "pic": "member9.jpg"
-    },
-    {
-      "name": "LU Junliang",
-      "position": "Associate Partner",
-      "pic": "member10.jpg"
-    }
-  ]
+	"members": [
+		{
+			"name": "MA Yansong",
+			"position": "Founder & Principal Partner",
+			"pic": "member1.jpg"
+		},
+		{
+			"name": "DANG Qun",
+			"position": "Principal Partner",
+			"pic": "member2.jpg"
+		},
+		{
+			"name": "Yosuke HAYANO",
+			"position": "Principal Partner",
+			"pic": "member3.jpg"
+		},
+		{
+			"name": "LIU Huiying",
+			"position": "Associate Partner",
+			"pic": "member4.jpg"
+		},
+		{
+			"name": "Andrea D'Antrassi",
+			"position": "Associate Partner",
+			"pic": "member5.jpg"
+		},
+		{
+			"name": "Kin Li",
+			"position": "Associate Partner",
+			"pic": "member6.jpg"
+		},
+		{
+			"name": "FU Changrui",
+			"position": "Associate Partner",
+			"pic": "member7.jpg"
+		},
+		{
+			"name": "Tiffany Dahlen",
+			"position": "Associate Partner",
+			"pic": "member8.jpg"
+		},
+		{
+			"name": "Flora Lee",
+			"position": "Associate Partner",
+			"pic": "member9.jpg"
+		},
+		{
+			"name": "LU Junliang",
+			"position": "Associate Partner",
+			"pic": "member10.jpg"
+		}
+	],
+	"exhibitions": [
+		{
+			"year": "2020",
+			"desc": "“Values of Design: China in the Making”, Design Society, Shenzhen, China"
+		},
+		{
+			"year": "2019",
+			"desc": "“MAD X” Centre Pompidou, Paris, France,“Future and the Arts: AI, Robotics, Cities, Life - How Humanity Will Live Tomorrow”, Mori Art Museum , Tokyo, Japan"
+		},
+		{
+			"year": "2018",
+			"desc": "Brazil Curitiba Biennale, Curitiba, Brazil“Reconstructing Utopia”, OCT Art and Design Gallery, Shenzhen, China“Fifth Ring”, Milan Design Week, Milan, Italy“Tunnel of Light”, Echigo Tsumari Art Field, Triennale, Japan"
+		},
+		{
+			"year": "2017",
+			"desc": "MAD Martian”, Design Miami, Basel, Switzerland“New Museums: Intentions, Expectations, Challenges”, Art Centre Basel, Basel, Switzerland“Beazley Designs of the Year”, Design Museum, London, UK“Shanghai Urban Space Art Season”, Shanghai, China"
+		},
+		{
+			"year": "2016",
+			"desc": "“Invisible Border“, Milan Design Week, Milan, Italy“Micro Garden“, 15th Venice Architecture Biennale, Venice, Italy“Towards a Critical Pragmatism: Contemporary Architecture in China“, Harvard Graduate School of Design, Boston, USA“Zai Xing Tu Mu. Sixteen Chinese Museums, Fifteen Chinese Architects“, Aedas Architecture Forum, Berlin, Germany"
+		}
+	],
+	"lectures": [
+		{
+			"year": "2019",
+			"desc": "“MAD X” Centre Pompidou, Paris, France,“Future and the Arts: AI, Robotics, Cities, Life - How Humanity Will Live Tomorrow”, Mori Art Museum , Tokyo, Japan"
+		},
+		{
+			"year": "2018",
+			"desc": "Brazil Curitiba Biennale, Curitiba, Brazil“Reconstructing Utopia”, OCT Art and Design Gallery, Shenzhen, China“Fifth Ring”, Milan Design Week, Milan, Italy“Tunnel of Light”, Echigo Tsumari Art Field, Triennale, Japan"
+		},
+		{
+			"year": "2017",
+			"desc": "MAD Martian”, Design Miami, Basel, Switzerland“New Museums: Intentions, Expectations, Challenges”, Art Centre Basel, Basel, Switzerland“Beazley Designs of the Year”, Design Museum, London, UK“Shanghai Urban Space Art Season”, Shanghai, China"
+		},
+		{
+			"year": "2016",
+			"desc": "“Invisible Border“, Milan Design Week, Milan, Italy“Micro Garden“, 15th Venice Architecture Biennale, Venice, Italy“Towards a Critical Pragmatism: Contemporary Architecture in China“, Harvard Graduate School of Design, Boston, USA“Zai Xing Tu Mu. Sixteen Chinese Museums, Fifteen Chinese Architects“, Aedas Architecture Forum, Berlin, Germany"
+		}
+	],
+	"awards": [
+		{
+			"year": "2018",
+			"desc": "Brazil Curitiba Biennale, Curitiba, Brazil“Reconstructing Utopia”, OCT Art and Design Gallery, Shenzhen, China“Fifth Ring”, Milan Design Week, Milan, Italy“Tunnel of Light”, Echigo Tsumari Art Field, Triennale, Japan"
+		},
+		{
+			"year": "2017",
+			"desc": "MAD Martian”, Design Miami, Basel, Switzerland“New Museums: Intentions, Expectations, Challenges”, Art Centre Basel, Basel, Switzerland“Beazley Designs of the Year”, Design Museum, London, UK“Shanghai Urban Space Art Season”, Shanghai, China"
+		},
+		{
+			"year": "2016",
+			"desc": "“Invisible Border“, Milan Design Week, Milan, Italy“Micro Garden“, 15th Venice Architecture Biennale, Venice, Italy“Towards a Critical Pragmatism: Contemporary Architecture in China“, Harvard Graduate School of Design, Boston, USA“Zai Xing Tu Mu. Sixteen Chinese Museums, Fifteen Chinese Architects“, Aedas Architecture Forum, Berlin, Germany"
+		}
+	]
 }

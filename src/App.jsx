@@ -7,6 +7,9 @@ import './globalStyles/Reset.scss';
 import Youtube from './components/sub/youtube/Youtube';
 import Gallery from './components/sub/gallery/Gallery';
 import Detail from './components/sub/youtube/Detail';
+import Contact from './components/sub/contact/Contact';
+import Community from './components/sub/community/Community';
+import Member from './components/sub/member/Member';
 
 function App() {
 	return (
@@ -16,6 +19,9 @@ function App() {
 			<Route path='/youtube' component={Youtube} />
 			<Route path='/detail/:id' component={Detail} />
 			<Route path='/gallery' component={Gallery} />
+			<Route path='/contact' component={Contact} />
+			<Route path='/community' component={Community} />
+			<Route path='/member' component={Member} />
 			<Footer />
 		</div>
 	);
