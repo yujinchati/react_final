@@ -12,7 +12,7 @@ export default function Community() {
 						<textarea cols='30' rows='3' placeholder='content'></textarea>
 					</div>
 					<div className='btnWrap'>
-						<button type='button' className='cancle hide'>
+						<button type='button' className='cancle blind'>
 							CANCLE
 						</button>
 						<button type='button' className='submit'>

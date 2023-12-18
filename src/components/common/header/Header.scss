@@ -13,6 +13,9 @@
 		display: flex;
 		li {
 			padding-right: 30px;
+			.on {
+				font-weight: bold;
+			}
 		}
 	}
 	button {

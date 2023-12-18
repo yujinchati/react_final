@@ -10,10 +10,11 @@ import Detail from './components/sub/youtube/Detail';
 import Contact from './components/sub/contact/Contact';
 import Community from './components/sub/community/Community';
 import Member from './components/sub/member/Member';
+import { useMedia } from './hook/useMedia';
 
 function App() {
 	return (
-		<div class='wrap'>
+		<div className={`wrap  ${useMedia()}`}>
 			<Header />
 			<Route path='/department' component={Department} />
 			<Route path='/youtube' component={Youtube} />

@@ -3,10 +3,16 @@
 		.listAward {
 			display: flex;
 			justify-content: flex-end;
-			li button {
-				margin-left: 50px;
-				font-size: 1.5rem;
-				cursor: pointer;
+			li {
+				a {
+					position: relative;
+					margin-left: 50px;
+					font-size: 1.5rem;
+					cursor: pointer;
+				}
+				&.on a {
+					text-decoration: underline;
+				}
 			}
 		}
 		.detailAward {
@@ -20,11 +26,12 @@
 					strong {
 						display: flex;
 						align-items: center;
+						padding: 0 40px 0 10px;
 					}
 					p {
-						padding: 15px;
+						width: 100%;
+						padding: 15px 10px;
 						border-top: 1px solid #ccc;
-						border-bottom: 1px solid #ccc;
 					}
 				}
 			}

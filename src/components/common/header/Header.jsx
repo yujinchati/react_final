@@ -40,7 +40,6 @@ export default function Header() {
 				</li>
 			</ul>
 			<button type='button'>Mobile Menu</button>
-
 			<div class='checkSwitch'>
 				<input type='checkbox' id='checkPush' name='inpPush' class='inpSwitch' />
 				<label for='checkPush' class='labSwitch'>

@@ -10,6 +10,9 @@
 				margin-right: 30px;
 				a {
 					cursor: pointer;
+					&.on {
+						font-weight: bold;
+					}
 				}
 			}
 		}

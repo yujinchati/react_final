@@ -32,14 +32,14 @@ export default function Department() {
 			<section>
 				<div className='awardBox'>
 					<ul className='listAward'>
-						<li>
-							<button type='button'>Exhibitions</button>
+						<li className='on'>
+							<a>#Exhibitions</a>
 						</li>
 						<li>
-							<button type='button'>Lectures</button>
+							<a>#Lectures</a>
 						</li>
 						<li>
-							<button type='button'>Awards & Recognition</button>
+							<a>#Awards & Recognition</a>
 						</li>
 					</ul>
 					<div class='detailAward'>
@@ -47,7 +47,7 @@ export default function Department() {
 							{ExhibitionsInfo &&
 								ExhibitionsInfo.map((data, idx) => {
 									return (
-										<li kay={data.idx}>
+										<li key={data.idx}>
 											<strong>{data.year}</strong>
 											<p>{data.desc}</p>
 										</li>
@@ -57,7 +57,7 @@ export default function Department() {
 					</div>
 				</div>
 				<div className='memberBox'>
-					<h3>People</h3>
+					<h3>#People</h3>
 					<ul className=''>
 						{MemberInfo &&
 							MemberInfo.map((data, idx) => {
