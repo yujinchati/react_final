@@ -6,21 +6,26 @@ import './Department.scss';
 export default function Department() {
 	const [MemberInfo, setMemberInfo] = useState();
 	const [ExhibitionsInfo, setExhibitions] = useState();
-	const [LecturesInfo, setLectures] = useState();
-	const [AwardsInfo, setAwards] = useState();
 
 	const path = useRef(process.env.PUBLIC_URL);
-	const fetchMember = async () => {
+	const fetchMember = async (type) => {
 		try {
 			const data = await fetch(`${path.current}/DB/department.json`);
 			const json = await data.json();
-			setMemberInfo(json.members);
-			setExhibitions(json.exhibitions);
-			setLectures(json.lectures);
-			setAwards(json.awards);
+
+			if (!type) {
+				setMemberInfo(json.members);
+				setExhibitions(json.exhibitions);
+			}
+			if (type === 'exhibition') setExhibitions(json.exhibitions);
+			if (type === 'lectures') setExhibitions(json.lectures);
+			if (type === 'awards') setExhibitions(json.awards);
 		} catch (err) {
 			console.error(err);
 		}
+	};
+	const handleTab = (type) => {
+		fetchMember(type);
 	};
 
 	useEffect(() => {
@@ -33,13 +38,13 @@ export default function Department() {
 				<div className='awardBox'>
 					<ul className='listAward'>
 						<li className='on'>
-							<a>#Exhibitions</a>
+							<a onClick={(e) => handleTab('exhibition')}>#Exhibitions</a>
 						</li>
 						<li>
-							<a>#Lectures</a>
+							<a onClick={(e) => handleTab('lectures')}>#Lectures</a>
 						</li>
 						<li>
-							<a>#Awards & Recognition</a>
+							<a onClick={(e) => handleTab('awards')}>#Awards & Recognition</a>
 						</li>
 					</ul>
 					<div class='detailAward'>
