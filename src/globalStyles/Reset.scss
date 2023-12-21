@@ -1,3 +1,7 @@
+html {
+	font-size: 16px;
+}
+
 body,
 button,
 dd,
@@ -31,8 +35,8 @@ input,
 select,
 table,
 textarea {
-	font-size: 16px;
-	line-height: auto;
+	font-size: inherit;
+	line-height: inherit;
 	color: #202020;
 	font-family: var(--baseFont);
 }
@@ -116,6 +120,15 @@ legend {
 	color: var(--baseColor);
 	font-family: var(--baseFont);
 	background-color: var(--bgColor);
-	font-size: var(--bodySize);
 	transition: color 1s, background-color 1s;
+}
+@media screen and (max-width: 1000px) {
+	html {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 640px) {
+	html {
+		font-size: 12px;
+	}
 }

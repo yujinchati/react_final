@@ -49,3 +49,12 @@
 		background-color: var(--baseColor);
 	}
 }
+.tablet,
+.mobile {
+	.addressBox .detailAddress {
+		width: 100%;
+	}
+	h3 {
+		display: none;
+	}
+}

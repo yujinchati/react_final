@@ -76,3 +76,31 @@
 		}
 	}
 }
+.tablet,
+.mobile {
+	.Member {
+		.boxInput {
+			align-items: flex-start;
+			flex-direction: column;
+			.tit {
+				width: 100%;
+				padding: 2px 0 5px;
+			}
+			input {
+				width: 100%;
+			}
+			.groupInput {
+				width: 100%;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				align-items: center;
+				.custom {
+					margin: 5px 10px;
+				}
+			}
+			textarea {
+				width: 100%;
+			}
+		}
+	}
+}

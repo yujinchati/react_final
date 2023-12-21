@@ -52,3 +52,22 @@
 		}
 	}
 }
+.tablet,
+.mobile {
+	.Footer {
+		padding: 25px 30px 10px;
+		.inner {
+			flex-direction: column;
+			h2 {
+				margin-right: 0;
+			}
+			.info {
+				margin-right: 0;
+				padding: 15px 0 15px;
+				strong {
+					padding-bottom: 15px;
+				}
+			}
+		}
+	}
+}

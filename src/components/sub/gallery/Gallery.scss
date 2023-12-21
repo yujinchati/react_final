@@ -78,3 +78,24 @@
 		}
 	}
 }
+.tablet,
+.mobile {
+	.Gallery {
+		.control {
+			width: 100%;
+			padding: 0;
+			flex-direction: column;
+			.tab li {
+				margin: 0;
+				padding: 10px 20px;
+			}
+			form {
+				margin-top: 20px;
+				input {
+					height: 34px;
+					box-sizing: border-box;
+				}
+			}
+		}
+	}
+}

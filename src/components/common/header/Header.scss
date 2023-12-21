@@ -70,3 +70,18 @@
 		}
 	}
 }
+.tablet,
+.mobile {
+	.Header {
+		padding: 10px 30px;
+		ul {
+			display: none;
+		}
+		button {
+			display: block;
+		}
+		.checkSwitch {
+			display: none;
+		}
+	}
+}

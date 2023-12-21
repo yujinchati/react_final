@@ -60,3 +60,39 @@
 		}
 	}
 }
+.tablet,
+.mobile {
+	.listYoutube {
+		li {
+			flex-direction: column;
+			.date {
+				display: flex;
+				align-items: center;
+				.month {
+					padding-right: 10px;
+					padding-bottom: 0;
+					border: 0 none;
+				}
+			}
+			.pic {
+				padding: 0;
+				padding-top: 20px;
+				height: auto;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+			.info {
+				width: 100%;
+				padding-top: 20px;
+				p {
+					padding-top: 10px;
+				}
+				a {
+					border: 0 none;
+				}
+			}
+		}
+	}
+}
