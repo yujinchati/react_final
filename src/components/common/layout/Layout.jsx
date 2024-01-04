@@ -4,8 +4,6 @@ import { useCustomText } from '../../../hook/useText';
 
 export default function Layout({ title, children }) {
 	const refFrame = useRef(null);
-	const refTitle = useRef(null);
-
 	const upperTxt = useCustomText('upper');
 
 	useEffect(() => {

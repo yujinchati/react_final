@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import Layout from '../../common/layout/Layout';
 import './Detail.scss';
 import { useParams } from 'react-router-dom';
