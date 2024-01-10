@@ -1,30 +1,13 @@
 import './Youtube.scss';
 import Layout from '../../common/layout/Layout';
-import { useEffect, useState } from 'react';
 import { useCustomText } from '../../../hook/useText';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { useYoutubeQuery } from '../../../hook/useYoutubeQuery';
 
 export default function Youtube() {
 	const upperTxt = useCustomText('upper');
-	const [vidList, setvidList] = useState();
-	const fetchYoutube = async () => {
-		const api_key = 'AIzaSyAGQQAc30WFVJWFnaZ0xLYoGa-J0PLtu1E';
-		const pid = 'PLV27B61FcKAXJrIYY52dsHtVtJzzHS1PM';
-		const num = 10;
-		const baseURL = `https://www.googleapis.com/youtube/v3/playlistItems?key=${api_key}&part=snippet&playlistId=${pid}&maxResults=${num}`;
-
-		try {
-			const data = await fetch(baseURL);
-			const json = await data.json();
-			setvidList(json.items);
-		} catch (err) {
-			console.error(err);
-		}
-	};
-	useEffect(() => {
-		fetchYoutube();
-	}, []);
+	const { data: Vids, isSuccess, isError, error, isLoading } = useYoutubeQuery();
 
 	//날짜 문자열 변환
 	const dateTxt = (date) => {
@@ -37,8 +20,9 @@ export default function Youtube() {
 		<Layout title={'Youtube'}>
 			<section>
 				<ul className='listYoutube'>
-					{vidList &&
-						vidList.map((data, idx) => {
+					{isLoading && <p>Loading...</p>}
+					{isSuccess &&
+						Vids.map((data, idx) => {
 							return (
 								<li>
 									<div className='date'>
@@ -61,6 +45,7 @@ export default function Youtube() {
 								</li>
 							);
 						})}
+					{isError && <p>데이터 반환에 실패했습니다.</p>}
 				</ul>
 			</section>
 		</Layout>

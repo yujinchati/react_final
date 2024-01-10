@@ -11,20 +11,26 @@ import Contact from './components/sub/contact/Contact';
 import Community from './components/sub/community/Community';
 import Member from './components/sub/member/Member';
 import { useMedia } from './hook/useMedia';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 function App() {
+	const queryClient = new QueryClient();
 	return (
-		<div className={`wrap  ${useMedia()}`}>
-			<Header />
-			<Route path='/department' component={Department} />
-			<Route path='/youtube' component={Youtube} />
-			<Route path='/detail/:id' component={Detail} />
-			<Route path='/gallery' component={Gallery} />
-			<Route path='/contact' component={Contact} />
-			<Route path='/community' component={Community} />
-			<Route path='/member' component={Member} />
-			<Footer />
-		</div>
+		<QueryClientProvider client={queryClient}>
+			<div className={`wrap  ${useMedia()}`}>
+				<Header />
+				<Route path='/department' component={Department} />
+				<Route path='/youtube' component={Youtube} />
+				<Route path='/detail/:id' component={Detail} />
+				<Route path='/gallery' component={Gallery} />
+				<Route path='/contact' component={Contact} />
+				<Route path='/community' component={Community} />
+				<Route path='/member' component={Member} />
+				<Footer />
+			</div>
+			<ReactQueryDevtools />
+		</QueryClientProvider>
 	);
 }
 

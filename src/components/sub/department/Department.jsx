@@ -2,36 +2,22 @@ import { useState, useEffect, useRef } from 'react';
 import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
 import Layout from '../../common/layout/Layout';
 import './Department.scss';
+import { useDepartmentQuery } from '../../../hook/useDepartmentQuery';
 
 export default function Department() {
-	const [MemberInfo, setMemberInfo] = useState();
-	const [ExhibitionsInfo, setExhibitions] = useState();
-
+	const [Opt, setOpt] = useState();
 	const path = useRef(process.env.PUBLIC_URL);
-	const fetchMember = async (type) => {
-		try {
-			const data = await fetch(`${path.current}/DB/department.json`);
-			const json = await data.json();
-
-			if (!type) {
-				setMemberInfo(json.members);
-				setExhibitions(json.exhibitions);
-			}
-			if (type === 'exhibition') setExhibitions(json.exhibitions);
-			if (type === 'lectures') setExhibitions(json.lectures);
-			if (type === 'awards') setExhibitions(json.awards);
-		} catch (err) {
-			console.error(err);
-		}
-	};
 	const handleTab = (type) => {
-		fetchMember(type);
+		if (type === 'exhibition') setOpt({ type: 'exhibitions' });
+		if (type === 'lectures') setOpt({ type: 'lectures' });
+		if (type === 'awards') setOpt({ type: 'awards' });
 	};
-
-	useEffect(() => {
-		fetchMember();
-	}, []);
-
+	const { data: Data, isSuccess: isData } = useDepartmentQuery();
+	if (isData) {
+		const DataFull = Data;
+		setOpt(Data.exhibitions);
+		console.log(DataFull);
+	}
 	return (
 		<Layout title={'Department'}>
 			<section>
@@ -49,8 +35,8 @@ export default function Department() {
 					</ul>
 					<div class='detailAward'>
 						<ul>
-							{ExhibitionsInfo &&
-								ExhibitionsInfo.map((data, idx) => {
+							{isData &&
+								Opt.map((data, idx) => {
 									return (
 										<li key={data.idx}>
 											<strong>{data.year}</strong>
@@ -64,8 +50,8 @@ export default function Department() {
 				<div className='memberBox'>
 					<h3>#People</h3>
 					<ul className=''>
-						{MemberInfo &&
-							MemberInfo.map((data, idx) => {
+						{isData &&
+							Data.members.map((data, idx) => {
 								return (
 									<li key={`member${idx}`}>
 										<img src={`${path.current}/img/${data.pic}`} alt={data.name} />
