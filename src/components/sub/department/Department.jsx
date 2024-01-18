@@ -5,38 +5,32 @@ import './Department.scss';
 import { useDepartmentQuery } from '../../../hook/useDepartmentQuery';
 
 export default function Department() {
-	const [Opt, setOpt] = useState();
+	const [List, setList] = useState(['exhibitions']);
+
 	const path = useRef(process.env.PUBLIC_URL);
-	const handleTab = (type) => {
-		if (type === 'exhibition') setOpt({ type: 'exhibitions' });
-		if (type === 'lectures') setOpt({ type: 'lectures' });
-		if (type === 'awards') setOpt({ type: 'awards' });
-	};
 	const { data: Data, isSuccess: isData } = useDepartmentQuery();
-	if (isData) {
-		const DataFull = Data;
-		setOpt(Data.exhibitions);
-		console.log(DataFull);
-	}
+	const getData = (List) => {
+		return Data[List];
+	};
 	return (
 		<Layout title={'Department'}>
 			<section>
 				<div className='awardBox'>
 					<ul className='listAward'>
 						<li className='on'>
-							<a onClick={(e) => handleTab('exhibition')}>#Exhibitions</a>
+							<a onClick={(e) => getData(setList('exhibitions'))}>#Exhibitions</a>
 						</li>
 						<li>
-							<a onClick={(e) => handleTab('lectures')}>#Lectures</a>
+							<a onClick={(e) => getData(setList('lectures'))}>#Lectures</a>
 						</li>
 						<li>
-							<a onClick={(e) => handleTab('awards')}>#Awards & Recognition</a>
+							<a onClick={(e) => getData(setList('awards'))}>#Awards & Recognition</a>
 						</li>
 					</ul>
 					<div class='detailAward'>
 						<ul>
 							{isData &&
-								Opt.map((data, idx) => {
+								getData(List).map((data, idx) => {
 									return (
 										<li key={data.idx}>
 											<strong>{data.year}</strong>
@@ -51,7 +45,7 @@ export default function Department() {
 					<h3>#People</h3>
 					<ul className=''>
 						{isData &&
-							Data.members.map((data, idx) => {
+							getData('members').map((data, idx) => {
 								return (
 									<li key={`member${idx}`}>
 										<img src={`${path.current}/img/${data.pic}`} alt={data.name} />
