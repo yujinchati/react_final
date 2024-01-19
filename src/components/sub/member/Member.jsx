@@ -71,7 +71,7 @@ export default function Member() {
 							<legend className='h'>회원가입 폼</legend>
 							<div className='boxInpt'>
 								<div className='boxInput'>
-									<label for='userid' className='tit'>
+									<label htmlFor='userid' className='tit'>
 										NAME
 									</label>
 									<input type='text' id='userid' name='userid' placeholder='User ID' value={Val.userid} onChange={handleChange} />
@@ -80,7 +80,7 @@ export default function Member() {
 							</div>
 							<div className=''>
 								<div className='boxInput'>
-									<label for='userEmail' className='tit'>
+									<label htmlFor='userEmail' className='tit'>
 										EMAIL
 									</label>
 									<input type='text' id='userEmail' name='email' placeholder='Email' value={Val.email} onChange={handleChange} />
@@ -89,7 +89,7 @@ export default function Member() {
 							</div>
 							<div>
 								<div className='boxInput'>
-									<label for='pwd1' className='tit'>
+									<label htmlFor='pwd1' className='tit'>
 										PASSWORD
 									</label>
 									<input type='password' id='pwd1' name='pwd1' placeholder='Password' value={Val.pwd1} onChange={handleChange} />
@@ -98,7 +98,7 @@ export default function Member() {
 							</div>
 							<div>
 								<div className='boxInput'>
-									<label for='pwd2' className='tit'>
+									<label htmlFor='pwd2' className='tit'>
 										RE-PASSWORD
 									</label>
 									<input type='password' id='pwd2' name='pwd2' placeholder='Password' value={Val.pwd2} onChange={handleChange} />
@@ -107,7 +107,7 @@ export default function Member() {
 							</div>
 							<div>
 								<div className='boxInput'>
-									<label for='edu' className='tit'>
+									<label htmlFor='edu' className='tit'>
 										EDUCATION
 									</label>
 									<div className='groupInput'>

@@ -41,9 +41,9 @@ export default function Header({ Dark, setDark }) {
 				</li>
 			</ul>
 			<button type='button'>Mobile Menu</button>
-			<div class='checkSwitch'>
-				<input type='checkbox' id='checkPush' name='inpPush' class='inpSwitch' onChange={() => setDark(!Dark)} />
-				<label for='checkPush' class='labSwitch'>
+			<div className='checkSwitch'>
+				<input type='checkbox' id='checkPush' name='inpPush' className='inpSwitch' onChange={() => setDark(!Dark)} />
+				<label htmlFor='checkPush' className='labSwitch'>
 					Dark mode change
 				</label>
 			</div>

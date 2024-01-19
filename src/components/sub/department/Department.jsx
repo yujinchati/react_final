@@ -27,7 +27,7 @@ export default function Department() {
 							<a onClick={(e) => getData(setList('awards'))}>#Awards & Recognition</a>
 						</li>
 					</ul>
-					<div class='detailAward'>
+					<div className='detailAward'>
 						<ul>
 							{isData &&
 								getData(List).map((data, idx) => {
