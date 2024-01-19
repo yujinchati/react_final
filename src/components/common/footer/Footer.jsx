@@ -7,7 +7,7 @@ export default function Footer() {
 		<div className='Footer'>
 			<div className='inner'>
 				<h2>Retreat</h2>
-				<div class='info'>
+				<div className='info'>
 					<strong>INFOMATION</strong>
 					<ul className='infoMenu'>
 						<li>
@@ -42,7 +42,7 @@ export default function Footer() {
 						</li>
 					</ul>
 				</div>
-				<div class='info'>
+				<div className='info'>
 					<strong>CONTACT</strong>
 					<dl>
 						<dt>e-mail</dt>
@@ -78,7 +78,7 @@ export default function Footer() {
 						</li>
 					</ul>
 				</div>
-				<small class='txt_copyright'>Copyright ©Retreat Corp. All rights reserved.</small>
+				<small className='txt_copyright'>Copyright ©Retreat Corp. All rights reserved.</small>
 			</div>
 		</div>
 	);

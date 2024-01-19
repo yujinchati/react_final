@@ -79,8 +79,8 @@ export default function Gallery() {
 		<>
 			<Layout title={'Gallery'}>
 				<section>
-					<div class='control'>
-						<ul class='tab' ref={tabNav}>
+					<div className='control'>
+						<ul className='tab' ref={tabNav}>
 							<li>
 								<a className='on' onClick={handleInterest}>
 									All PROJECT
@@ -92,9 +92,9 @@ export default function Gallery() {
 						</ul>
 						<form onSubmit={handleSearch}>
 							<fieldset>
-								<legend class='blind'>검색</legend>
-								<input type='text' placeholder='Search' class='tf_search' />
-								<button type='button' class='btnSearch'>
+								<legend className='blind'>검색</legend>
+								<input type='text' placeholder='Search' className='tf_search' />
+								<button type='button' className='btnSearch'>
 									<IoIosSearch color='#fff' size='24' />
 								</button>
 							</fieldset>

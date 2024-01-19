@@ -47,7 +47,7 @@ export default function Department() {
 							<a onClick={(e) => handleTab('awards')}>#Awards & Recognition</a>
 						</li>
 					</ul>
-					<div class='detailAward'>
+					<div className='detailAward'>
 						<ul>
 							{ExhibitionsInfo &&
 								ExhibitionsInfo.map((data, idx) => {
