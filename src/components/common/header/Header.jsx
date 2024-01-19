@@ -1,7 +1,8 @@
 import { NavLink, Link } from 'react-router-dom/cjs/react-router-dom.min';
 import './Header.scss';
+import { useState } from 'react';
 
-export default function Header() {
+export default function Header({ Dark, setDark }) {
 	return (
 		<header className='Header'>
 			<h1>
@@ -41,7 +42,7 @@ export default function Header() {
 			</ul>
 			<button type='button'>Mobile Menu</button>
 			<div class='checkSwitch'>
-				<input type='checkbox' id='checkPush' name='inpPush' class='inpSwitch' />
+				<input type='checkbox' id='checkPush' name='inpPush' class='inpSwitch' onChange={() => setDark(!Dark)} />
 				<label for='checkPush' class='labSwitch'>
 					Dark mode change
 				</label>

@@ -13,8 +13,12 @@
 		display: flex;
 		li {
 			padding-right: 30px;
-			.on {
-				font-weight: bold;
+			a {
+				cursor: pointer;
+
+				&.on {
+					font-weight: bold;
+				}
 			}
 		}
 	}
@@ -73,9 +77,30 @@
 .tablet,
 .mobile {
 	.Header {
+		position: fixed;
 		padding: 10px 30px;
+		background: #fff;
+		z-index: 10;
 		ul {
-			display: none;
+			position: absolute;
+			bottom: 0;
+			transform: translateY(100%);
+			width: 100%;
+			box-sizing: border-box;
+			left: 0;
+			padding: 0 30px;
+			justify-content: space-between;
+			background: #fff;
+			border-top: 1px solid #f3f3f3;
+			z-index: 10;
+			box-shadow: 0 3px 9px #f3f3f3;
+			li {
+				padding-right: 0;
+			}
+			a {
+				display: block;
+				padding: 10px 0;
+			}
 		}
 		button {
 			display: block;
